@@ -10,7 +10,7 @@
 ```bash
 pip install -q dagshub mlflow
 ```
-# Step 2 =: Use the DagsHub client to setup connection information for MLflow
+ Step 2 =: Use the DagsHub client to setup connection information for MLflow
 
 ```bash
 import dagshub
@@ -31,10 +31,10 @@ with mlflow.start_run():
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/chest-Disease-Classification-MLflow-DVC.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/''''''''''''
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
+export MLFLOW_TRACKING_USERNAME="   " 
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9353c5b10041d5c8edbcef0
+export MLFLOW_TRACKING_PASSWORD="   "
 
 ```
