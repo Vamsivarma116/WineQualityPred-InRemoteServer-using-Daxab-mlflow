@@ -1,11 +1,11 @@
 # WineQualityPred-InRemoteServer-using-Daxab-mlflow
 
 # Allowing Dagshub to track my repo MLflow
-============================================
+===============================================
 
 # Method 1
-===========
-# Step 1 =: Installing the dagshub in to our current working repo or directory
+=============
+ Step 1 =: Installing the dagshub in to our current working repo or directory
 
 ```bash
 pip install -q dagshub mlflow
@@ -16,7 +16,7 @@ pip install -q dagshub mlflow
 import dagshub
 dagshub.init(repo_owner='Vamsivarma116', repo_name='WineQualityPred-InRemoteServer-using-Daxab-mlflow', mlflow=True)
 ```
-# Step 3 =: Use MLflow to log params and metrics(Which is already done in WineQualityPred.py file line no 74 - 78)
+ Step 3 =: Use MLflow to log params and metrics(Which is already done in WineQualityPred.py file line no 74 - 78)
 
 ```bash
 import mlflow
@@ -26,8 +26,8 @@ with mlflow.start_run():
 ```
 
 # Method : 2  
-=============
-# Run this to export as env variables:
+===============
+ Run this to export as env variables:
 
 ```bash
 
