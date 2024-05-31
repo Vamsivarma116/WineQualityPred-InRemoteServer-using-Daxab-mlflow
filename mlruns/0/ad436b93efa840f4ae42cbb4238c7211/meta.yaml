@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Dell/Desktop/WineQualityPredection%28MLflow%29/mlruns/0/ad436b93efa840f4ae42cbb4238c7211/artifacts
+end_time: 1717075186026
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ad436b93efa840f4ae42cbb4238c7211
+run_name: burly-mole-256
+run_uuid: ad436b93efa840f4ae42cbb4238c7211
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717075180952
+status: 3
+tags: []
+user_id: Dell
