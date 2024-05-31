@@ -5,7 +5,7 @@
 
 # Method 1
 =============
- Step 1 =: Installing the dagshub in to our current working repo or directory
+  Step 1 =: Installing the dagshub in to our current working repo or directory
 
 ```bash
 pip install -q dagshub mlflow
@@ -27,7 +27,7 @@ with mlflow.start_run():
 
 # Method : 2  
 ===============
- Run this to export as env variables:
+  Run this to export as env variables:
 
 ```bash
 
