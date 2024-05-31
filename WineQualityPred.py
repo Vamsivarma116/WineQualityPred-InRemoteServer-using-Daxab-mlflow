@@ -16,6 +16,9 @@ from sklearn.model_selection import train_test_split
 import mlflow
 import mlflow.sklearn
 from mlflow.models import infer_signature
+import dagshub
+
+dagshub.init(repo_owner='Vamsivarma116', repo_name='WineQualityPred-InRemoteServer-using-Daxab-mlflow', mlflow=True)
 
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
@@ -74,8 +77,6 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        predictions = lr.predict(train_x)
-        signature = infer_signature(train_x, predictions)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
@@ -86,7 +87,6 @@ if __name__ == "__main__":
             # please refer to the doc for more information:
             # https://mlflow.org/docs/latest/model-registry.html#api-workflow
             mlflow.sklearn.log_model(
-                lr, "model", registered_model_name="ElasticnetWineModel", signature=signature
-            )
+                lr, "model", registered_model_name="ElasticnetWineModel")
         else:
-            mlflow.sklearn.log_model(lr, "model", signature=signature) 
+            mlflow.sklearn.log_model(lr, "model") 
